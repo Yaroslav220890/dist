@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="stylesheet" href="main.48b3db1d.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" defer=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer=""></script>
+    <script src="main.d8ebb8d6.js" defer=""></script>
+    <script src="slider.6dfacfd0.js" defer=""></script>
+    <script src="title.52a8a2bf.js" defer=""></script>
+    <script src="top__button.e96c3a3d.js" defer=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer=""></script>
+    <script src="contact.js"></script>
+  </head>
+  <body>
+    <wrapper class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="#" class="header__logo">
+              <img src="logo_SM.4e9fc96e.png" alt="logo">
+            </a>
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li class="header__list-item">
+                  <a href="#" class="header__link">Головна</a>
+                  <div class="border"></div>
+                </li>
+                <li class="header__list-item">
+                  <a href="trener.html" class="header__link">Тренери</a>
+                  <div class="border"></div>
+                </li>
+                <li class="header__list-item">
+                  <a href="season_ticket.html" class="header__link">Абонемент</a>
+                  <div class="border"></div>
+                </li>
+                <li class="header__list-item">
+                  <a href="contact.html" class="header__link">Контакти</a>
+                  <div class="border"></div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+
+
+      <div class="content content__front">
+        <div class=" content">
+          <div class="container container__tittle">
+            <h2>Ціни</h2>
+          </div>
+        </div>
+        <div class="container container__price">
+          <div class="card">
+            <ul class="card__services">
+              <li>Тренажерна зала</li>
+              <li>Доступ на повний день</li>
+            </ul>
+            <span class="card__price">200 грн</span>
+            <button class="card__btn "><span>Купити</span></button>
+          </div>
+
+          <div class="card">
+            <ul class="card__services">
+              <li>Тренажерна зала</li>
+              <li>Доступ на повний день</li>
+              <li>Рушник</li>
+            </ul>
+
+            <span class="card__price">1000 грн</span>
+            <button class="card__btn "><span>Купити</span></button>
+          </div>
+
+          <div class="card">
+            <ul class="card__services">
+              <li>Тренажерна зала</li>
+              <li>Доступ на повний день</li>
+              <li>Ввідне тренування</li>
+              <li>Рушник</li>
+            </ul>
+
+            <span class="card__price">3500 грн</span>
+            <button class="card__btn "><span>Купити</span></button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <input type="checkbox" name="showForm" id="showForm" class="showForm">
+      <div class="form">
+        <h2>Зв'язатися з нами</h2>
+        <form>
+          <div class="left section">
+            <input type="text" name="name" placeholder="Ім'я " required="">
+            <input type="email" name="email" placeholder="e-mail">
+            <input type="tel" name="tel" placeholder="Телефон" required="">
+          </div>
+          <div class="right section">
+            <textarea name="comment" placeholder="Your comment"></textarea>
+          </div>
+          <button type="submit" class="sendForm left card__btn">Передзвонити</button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy All rights reserved</p>
+        </div>
+      </footer>
+
+    </wrapper>
+    <script>// Получите ссылку на чекбокс и кнопку "Купити"
+var showFormCheckbox = document.getElementById('showForm');
+var buyButtons = document.querySelectorAll('.card__btn'); // Функция, которая будет вызвана при клике на кнопку "Купити"
+
+function openFormOnClick() {
+  // Переключите состояние чекбокса, чтобы открыть или закрыть форму
+  showFormCheckbox.checked = true;
+} // Функция, которая будет вызвана при клике на кнопку "Відміна"
+
+
+function closeFormOnClick() {
+  // Переключите состояние чекбокса, чтобы закрыть форму
+  showFormCheckbox.checked = false;
+} // Добавьте слушатель события на кнопки "Купити"
+
+
+buyButtons.forEach(function (button) {
+  button.addEventListener('click', openFormOnClick);
+});</script>
+
+  </body>
+</html>
