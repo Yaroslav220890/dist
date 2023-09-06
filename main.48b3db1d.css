@@ -810,7 +810,6 @@ iframe {
     top: 15%;
     right: 0;
     bottom: 0;
-    left: -38%;
     background-size: cover;
 
     transition: transform .2s; }
