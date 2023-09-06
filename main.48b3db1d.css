@@ -811,7 +811,6 @@ iframe {
     right: 0;
     bottom: 0;
     background-size: cover;
-
     transition: transform .2s; }
   .blog-card .description {
     padding: 1rem;
