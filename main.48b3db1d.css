@@ -90,7 +90,7 @@ html, body {
     transform: scale(1.12);
     transition: 0.3s ease; }
   .header__logo img {
-    max-width: 100%;
+    max-width: 80%;
     display: block; }
   .header__burger {
     display: none; }
@@ -184,7 +184,7 @@ html, body {
     text-decoration: none;
     color: white;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     padding: 5px; }
     @media (max-width: 768px) {
       .header__link {
@@ -747,8 +747,8 @@ iframe {
   margin: 10px; }
   @media (max-width: 1020px) {
     .container__social .link {
-      width: 60px;
-      height: 60px; } }
+      width: 35px;
+      height: 35px; } }
 
 .container__social .link:hover {
   color: white;
