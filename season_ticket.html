@@ -6,6 +6,7 @@
     <title>GYM</title>
     <link rel="stylesheet" href="main.48b3db1d.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" defer=""></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer=""></script>
     <script src="main.d8ebb8d6.js" defer=""></script>
@@ -50,8 +51,6 @@
         </div>
       </header>
 
-
-
       <div class="content content__front">
         <div class=" content">
           <div class="container container__tittle">
@@ -65,7 +64,7 @@
               <li>Доступ на повний день</li>
             </ul>
             <span class="card__price">200 грн</span>
-            <button class="card__btn "><span>Купити</span></button>
+            <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
           </div>
 
           <div class="card">
@@ -76,7 +75,7 @@
             </ul>
 
             <span class="card__price">1000 грн</span>
-            <button class="card__btn "><span>Купити</span></button>
+            <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
           </div>
 
           <div class="card">
@@ -86,67 +85,79 @@
               <li>Ввідне тренування</li>
               <li>Рушник</li>
             </ul>
-
             <span class="card__price">3500 грн</span>
-            <button class="card__btn "><span>Купити</span></button>
+            <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
+          </div>
+          
+          <div class="card">
+            <ul class="card__services">
+              <li>Тренажерна зала</li>
+              <li>Доступ на повний день</li>
+            </ul>
+            <span class="card__price">200 грн</span>
+            <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
+          </div>
+          
+          <div class="card">
+            <ul class="card__services">
+              <li>Тренажерна зала</li>
+              <li>Доступ на повний день</li>
+              <li>Рушник</li>
+            </ul>
+          
+            <span class="card__price">1000 грн</span>
+            <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
+          </div>
+          
+          <div class="card">
+            <ul class="card__services">
+              <li>Тренажерна зала</li>
+              <li>Доступ на повний день</li>
+              <li>Ввідне тренування</li>
+              <li>Рушник</li>
+            </ul>
+            <span class="card__price">3500 грн</span>
+            <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
           </div>
         </div>
       </div>
 
+      <script>
+        $(document).ready(function () {
+          $("[data-fancybox]").fancybox({
+            afterShow: function () {
+              $(".hidden").hide();
+            }
+          });
+        });
+      </script>
 
-
-
-      <input type="checkbox" name="showForm" id="showForm" class="showForm">
-      <div class="form">
-        <h2>Зв'язатися з нами</h2>
-        <form>
-          <div class="left section">
-            <input type="text" name="name" placeholder="Ім'я " required="">
-            <input type="email" name="email" placeholder="e-mail">
-            <input type="tel" name="tel" placeholder="Телефон" required="">
+        <div class="hidden">
+          <div class="red" id="open">
+            <div class="form">
+              <h2>Зв'язатися з нами</h2>
+              <form>
+                <div class="left section">
+                  <input type="text" name="name" placeholder="Ім'я " required="">
+                  <input type="email" name="email" placeholder="E-mail">
+                  <input type="tel" name="tel" placeholder="Телефон" required="">
+                </div>
+                <div class="right section">
+                  <textarea name="comment" placeholder="Повідомлення "></textarea>
+                </div>
+                <button type="submit" class="sendForm left card__btn">Передзвонити</button>
+              </form>
+            </div>
           </div>
-          <div class="right section">
-            <textarea name="comment" placeholder="Your comment"></textarea>
-          </div>
-          <button type="submit" class="sendForm left card__btn">Передзвонити</button>
-        </form>
-      </div>
-
-
-
-
-
-
-
-
-
+        </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
       <footer class="footer">
         <div class="container">
           <p>&copy All rights reserved</p>
         </div>
       </footer>
-
     </wrapper>
-    <script>// Получите ссылку на чекбокс и кнопку "Купити"
-var showFormCheckbox = document.getElementById('showForm');
-var buyButtons = document.querySelectorAll('.card__btn'); // Функция, которая будет вызвана при клике на кнопку "Купити"
-
-function openFormOnClick() {
-  // Переключите состояние чекбокса, чтобы открыть или закрыть форму
-  showFormCheckbox.checked = true;
-} // Функция, которая будет вызвана при клике на кнопку "Відміна"
-
-
-function closeFormOnClick() {
-  // Переключите состояние чекбокса, чтобы закрыть форму
-  showFormCheckbox.checked = false;
-} // Добавьте слушатель события на кнопки "Купити"
-
-
-buyButtons.forEach(function (button) {
-  button.addEventListener('click', openFormOnClick);
-});</script>
-
   </body>
 </html>

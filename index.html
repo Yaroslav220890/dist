@@ -6,6 +6,7 @@
     <title>GYM</title>
     <link rel="stylesheet" href="main.48b3db1d.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" defer=""></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer=""></script>
     <script src="main.d8ebb8d6.js" defer=""></script>
@@ -13,12 +14,15 @@
     <script src="title.52a8a2bf.js" defer=""></script>
     <script src="top__button.e96c3a3d.js" defer=""></script>
     <script src="sign-form.29f44e1f.js" defer=""></script>
+    <script src="sign-form.6102a45e.js" defer=""></script>
     <script src="main.48b3db1d.js"></script>
+    <script src="fancybox.js"></script>
+    
   </head>
   <body class="body">
     <div class="wrapper">
       <header class="header">
-        <div class="container">
+        <div class="container container__header">
           <div class="header__body">
             <a href="index.html" class="header__logo">
               <img src="logo_SM.4e9fc96e.png" alt="logo">
@@ -45,10 +49,23 @@
                   <div class="border"></div>
                 </li>
               </ul>
+              <div class="container__social">
+                <a href="https://www.facebook.com" target="_blank">
+                  <img class="link facebook" src="facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                  <img class="link instagram" src="instagram.png" alt="instagram">
+                </a>
+                <a href="mailto:123@gmail.com">
+                  <img class="link gmail" src="email.png" alt="gmail">
+                </a>
+              </div>
             </nav>
           </div>
+          
         </div>
       </header>
+      
       <div class="content content__front">
         <div class=" content">
           <div class="sdf">
@@ -63,30 +80,65 @@
         </div>
       </div>
 
+      <div class="container container__discount">
+        <div class="family">
+          <img src="./знижка_15.png" alt="">
+        </div>
+
+        <div class="study">
+          <img src="знижка_study.png" alt="">
+        </div>
+
+      </div>
+
       <div class="container container__advantages">
         <div class="advantages">
-          <div class="advantages__blocks container__tittle">
-            <img src="free-icon-placeholder-684809.a3d4f503.png" alt="">
-            <h3>СУПЕР ЛОКАЦІЯ</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</p>
-            <img src="free-icon-gym-bars-6600940.bfbc6834.png" alt="">
-            <h3> СТИЛЬ І КОМФОРТ </h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</p>
-            <img src="free-icon-gym-machine-3837185.3c4bf887.png" alt="">
-            <h3>СУЧАСНЕ ОБЛАДНАННЯ</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</p>
-          </div>
-          <div class="advantages__blocks container__tittle">
-            <img src="free-icon-gym-machine-3349382.e6ba170e.png" alt="">
-            <h3>БЕЗ ЧЕРГ НА ТРЕНАЖЕРИ</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</p>
-            <img src="free-icon-bodybuilding-3490782.5792e58c.png" alt="">
-            <h3>ЧЕРГОВИЙ ТРЕНЕР</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</p>
-            <img src="free-icon-waist-8756237.d9756985.png" alt="">
-            <h3>ВВІДНЕ ТРЕНУВАННЯ</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, velit?</p>
-          </div>
+          
+            <div class="advantages__block container__tittle">
+              <img src="free-icon-placeholder-684809.a3d4f503.png" alt="">
+              <h3>СУПЕР ЛОКАЦІЯ</h3>
+              <p>Запрошуємо вас в наш сучасний тренажерний зал, який розташований в ідеальному місці для досягнення ваших фітнес-цілей.
+              Наша локація - це ключ до успішних тренувань та активного способу життя.</p>
+            </div> 
+
+            <div class="advantages__block container__tittle">
+              <img src="free-icon-gym-bars-6600940.bfbc6834.png" alt="">
+              <h3> СТИЛЬ КОМФОРТ </h3>
+              <p>Теж не любиш, коли в залі все заставлено обладнанням, а в роздягальнях в пікові години ніде яблуку упасти? Розуміємо.
+                У нас не так.
+                Якщо ти цінуєш стиль, комфорт, професіоналізм і високий рівень сервісу</p>
+            </div>
+            
+            <div class="advantages__block container__tittle">
+              <img src="free-icon-gym-machine-3837185.3c4bf887.png" alt="">
+              <h3>СУЧАСНЕ ОБЛАДНАННЯ</h3>
+              <p>Тренуйся безпечно на професійному обладнанні. Наш тренажерний простір оснащений високоякісними тренажерами та
+                інвентарем
+                люксового класу</p>
+            </div>
+
+            <div class="advantages__block container__tittle">
+              <img src="free-icon-gym-machine-3349382.e6ba170e.png" alt="">
+              <h3>БЕЗ ЧЕРГ НА ТРЕНАЖЕРИ</h3>
+              <p>В нашому просторі ти не будеш чекати, поки звільниться тренажер. Завжди зможеш знайти гантелі з потрібною вагою.
+                Зможеш
+                кайфово потренуватися у будь-який час.</p>
+            </div>
+
+            <div class="advantages__block container__tittle">
+              <img src="free-icon-bodybuilding-3490782.5792e58c.png" alt="">
+              <h3>ЧЕРГОВИЙ ТРЕНЕР</h3>
+              <p>За твоєю безпекою слідкує тренер. Він допоможе розібратися з обладнанням, щоб тренування принесло тобі користь і
+                задоволення.</p>
+            </div>
+
+            <div class="advantages__block container__tittle">
+              <img src="free-icon-waist-8756237.d9756985.png" alt="">
+              <h3>ВВІДНЕ ТРЕНУВАННЯ</h3>
+              <p>В кожен абонемент включено індивідуальне вводне тренування з професійним тренером. Він розкаже про властивості всіх
+                тренажерів. Ти дізнаєшся склад свого тіла та отримаєш рекомендації щодо тренувань.</p>
+            </div>
+
         </div>
       </div>
 
@@ -98,32 +150,51 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="img" src="2.a402d086.webp" alt="img">
+              <a href="2.a402d086.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="2.a402d086.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="3.c5eea11a.webp" alt="img">
+              <a href="3.c5eea11a.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="3.c5eea11a.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="4.c88cfdd9.webp" alt="img">
+              <a href="4.c88cfdd9.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="4.c88cfdd9.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="5.825ec721.webp" alt="img">
+              <a href="5.825ec721.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="5.825ec721.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="6.90f4f9c3.webp" alt="img">
+              <a href="6.90f4f9c3.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="6.90f4f9c3.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="7.623aa243.webp" alt="img">
+              <a href="7.623aa243.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="7.623aa243.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="8.2e703b36.webp" alt="img">
+              <a href="8.2e703b36.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="8.2e703b36.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="9.568884c9.webp" alt="img">
+              <a href="9.568884c9.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="9.568884c9.webp" alt="img">
+              </a>
             </div>
             <div class="swiper-slide">
-              <img class="img" src="10.3a4463a5.webp" alt="img">
+              <a href="10.3a4463a5.webp" data-fancybox="gallery" data-caption="Описание изображения">
+                <img class="img" src="10.3a4463a5.webp" alt="img">
+              </a>
             </div>
+
           </div>
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
@@ -138,35 +209,86 @@
       <div class="container container__price">
         <div class="card">
           <ul class="card__services">
+            <h2>Безлім на місяць</h2>
             <li>Тренажерна зала</li>
             <li>Доступ на повний день</li>
           </ul>
-          <span class="card__price">200 грн</span>
-          <button class="card__btn "><span>Купити</span></button>
+          <span class="card__price">1400 грн</span>
+          <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
         </div>
 
         <div class="card">
           <ul class="card__services">
+            <h2>З 12:00 до 16:00</h2>
             <li>Тренажерна зала</li>
-            <li>Доступ на повний день</li>
-            <li>Рушник</li>
           </ul>
 
+          <span class="card__price">600 грн</span>
+          <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
+        </div>
+
+        <div class="card">
+          <ul class="card__services">
+            <h2>З 7:00 до 12:00</h2>
+            <li>Тренажерна зала</li>
+            <li>Доступ на повний день</li>
+          </ul>
+
+          <span class="card__price">850 грн</span>
+          <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
+        </div>
+
+        <div class="card">
+          <ul class="card__services">
+            <h2>Безлім 8 тренувань</h2>
+            <li>Тренажерна зала</li>
+            <li>Доступ на повний день</li>
+          </ul>
+          <span class="card__price">800 грн</span>
+          <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
+        </div>
+        
+        <div class="card">
+          <ul class="card__services">
+            <h2>Безлім 14 тренувань</h2>
+            <li>Тренажерна зала</li>
+            <li>Доступ на повний день</li>
+          </ul>
+        
           <span class="card__price">1000 грн</span>
-          <button class="card__btn "><span>Купити</span></button>
+          <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
         </div>
-
+        
         <div class="card">
           <ul class="card__services">
+            <h2>Разове відвідування</h2>
             <li>Тренажерна зала</li>
             <li>Доступ на повний день</li>
-            <li>Ввідне тренування</li>
-            <li>Рушник</li>
           </ul>
-
-          <span class="card__price">3500 грн</span>
-          <button class="card__btn "><span>Купити</span></button>
+        
+          <span class="card__price">200 грн</span>
+          <a class="card__btn" data-fancybox data-src="#open" href="javascript:;">Купити</a>
         </div>
+
+        <div class="hidden">
+          <div class="red" id="open">
+            <div class="form">
+              <h2>Зв'язатися з нами</h2>
+              <form>
+                <div class="left section">
+                  <input type="text" name="name" placeholder="Ім'я " required="">
+                  <input type="email" name="email" placeholder="E-mail">
+                  <input type="tel" name="tel" placeholder="Телефон" required="">
+                </div>
+                <div class="right section">
+                  <textarea name="comment" placeholder="Повідомлення "></textarea>
+                </div>
+                <button type="submit" class="sendForm left card__btn">Передзвонити</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <div class="container container__tittle">
@@ -183,8 +305,8 @@
                     <img src="abs-1850926_1280.776b718b.jpg" alt="photo">
                   </div>
                   <div class="name-user">
-                    <strong>Liam mendes</strong>
-                    <span>@liammendes</span>
+                    <strong>Оксана</strong>
+                    <span>@olena_1985</span>
                   </div>
                 </div>
                 <div class="reviews">
@@ -196,9 +318,8 @@
                 </div>
               </div>
               <div class="client-comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus
-                  architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt
-                  blanditiis sed atque cumque.</p>
+                <p>Я тренуюся в цьому залі вже кілька місяців, і можу сказати, що це місце справді вражає. Відмінне обладнання, привітний
+                персонал і чистота в залі роблять тренування приємними. Рекомендую!</p>
               </div>
             </div>
             <div class="testimonial-box">
@@ -208,8 +329,8 @@
                     <img src="selfie-portrait-for-videocall.d494196b.jpg" alt="photo">
                   </div>
                   <div class="name-user">
-                    <strong>Noah Wood</strong>
-                    <span>@noahwood</span>
+                    <strong>Ірина</strong>
+                    <span>@iryna_artist</span>
                   </div>
                 </div>
                 <div class="reviews">
@@ -221,9 +342,8 @@
                 </div>
               </div>
               <div class="client-comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus
-                  architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt
-                  blanditiis sed atque cumque.
+                <p>Тренажерний зал - моє друге домашнє місце! Я оцінюю різноманіття тренажерів і можливість тренувань у зручний для мене
+                час. Також великий плюс - професійні тренери, завжди готові допомогти і дати пораду.
                 </p>
               </div>
             </div>
@@ -234,8 +354,8 @@
                     <img src="expressive-woman-posing-outdoor.663c48f1.jpg" alt="photo">" alt="photo">
                   </div>
                   <div class="name-user">
-                    <strong>Oliver Queen</strong>
-                    <span>@oliverqueen</span>
+                    <strong>Марія</strong>
+                    <span>@mariia_flower</span>
                   </div>
                 </div>
                 <div class="reviews">
@@ -247,9 +367,8 @@
                 </div>
               </div>
               <div class="client-comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus
-                  architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt
-                  blanditiis sed atque cumque.
+                <p>Я почав ходити в цей тренажерний зал кілька місяців тому, і результати мене вразили. Тут є все, що мені потрібно для
+                ефективних тренувань, і атмосфера мотивує. Дякую, залу!
                 </p>
               </div>
             </div>
@@ -260,8 +379,8 @@
                     <img src="porait-of-cute-boy-in-cafe.91d32f0e.jpg" alt="photo">" alt="photo">
                   </div>
                   <div class="name-user">
-                    <strong>Barry Allen</strong>
-                    <span>@barryallen</span>
+                    <strong>Сергій</strong>
+                    <span>@serhii_traveler</span>
                   </div>
                 </div>
                 <div class="reviews">
@@ -273,9 +392,8 @@
                 </div>
               </div>
               <div class="client-comment">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus
-                  architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt
-                  blanditiis sed atque cumque.
+                <p>Сімейний абонемент в цьому тренажерному залі - наше порятунок! Ми з чоловіком і дітьми тренуємось разом, і це стало не
+                лише корисним, але і захопливим заняттям для всієї родини. Дякуємо за знижку!
                 </p>
               </div>
             </div>
@@ -316,26 +434,25 @@
 
       <div class="container social ">
         <div class="container__tittle-social">
-          <h4>Наша адреса</h4>
-          <p>
-            <a href="https://www.google.com/maps?q=Лісківська буд 10">Лісківська буд 10</a>
-          </p>
-          <h4>Номер телефону</h4>
-          <p>
-            <a href="tel:+380980000000">+38 098 000 00 00</a>
-          </p>
-          <h4>E-mail</h4>
-          <p>
-            <a href="mailto:gym@gmail.com">gym@gmail.com</a>
-          </p>
-          <h4>Графік роботи</h4>
-          <p> Пн-Пт 7:00 - 21:00</p>
-          <p>Сб-Нд 9:00 - 20:00</p>
-        </div>
-        <div class="container__social">
-          <img class="link facebook" src="facebook.a50cc8ee.png" alt="facebook">
-          <img class="link instagram" src="instagram.224fc421.png" alt="instagram">
-          <img class="link gmail" src="gmail.f99157e8.png" alt="gmail">
+          <div class="social__contact">
+            <h4>Наша адреса</h4>
+            <p>
+              <a href="https://www.google.com/maps?q=Лісківська буд 10">Лісківська буд 10</a>
+            </p>
+            <h4>Номер телефону</h4>
+            <p>
+              <a href="tel:+380980000000">+38 098 000 00 00</a>
+            </p>
+          </div>
+          <div class="social__contact">
+            <h4>E-mail</h4>
+            <p>
+              <a href="mailto:gym@gmail.com">gym@gmail.com</a>
+            </p>
+            <h4>Графік роботи</h4>
+            <p> Пн-Пт 7:00 - 21:00</p>
+            <p>Сб-Нд 9:00 - 20:00</p>
+          </div>
         </div>
       </div>
 
@@ -348,5 +465,7 @@
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </body>
 </html>
