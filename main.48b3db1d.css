@@ -741,8 +741,6 @@ iframe {
   position: relative;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 2px dashed white;
   padding: 7px;
   transition: .5s;
   color: #D7D0BE;
