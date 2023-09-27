@@ -731,6 +731,8 @@ iframe {
 
 .social__contact {
   padding: 20px;
+  max-width: 310px;
+  text-align: center;
 }
 
 .container__social .link {
@@ -826,8 +828,7 @@ iframe {
 .scroll-text {
   text-decoration: none;
   color: white;
-  font-size: 14px;
-  font-weight: bold; }
+  font-size: 14px;}
 
 .scroll-text:hover {
   color: black; }
