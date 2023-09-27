@@ -750,13 +750,6 @@ iframe {
       width: 60px;
       height: 60px; } }
 
-@media (max-width: 768px) {
-  .container__social .link:not(:last-child) {
-    margin: 0px 15px 0px 0px; } }
-
-.container__social .link:last-child {
-  margin-bottom: 0px; }
-
 .container__social .link:hover {
   color: white;
   transform: rotate(360deg);
@@ -772,9 +765,11 @@ iframe {
   padding-left: 50px; }
   @media (max-width: 768px) {
     .container__tittle-social {
+      display: flex;
       height: 350px;
       font-size: 20px;
-      padding: 0; } }
+      flex-direction: column;
+      padding: 0; }}
 
 .container__tittle-social a, p {
   text-decoration: none;
